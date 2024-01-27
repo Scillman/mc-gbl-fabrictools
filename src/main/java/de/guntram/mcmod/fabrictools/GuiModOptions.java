@@ -1,17 +1,11 @@
 package de.guntram.mcmod.fabrictools;
 
-import de.guntram.mcmod.fabrictools.IConfiguration;
-import de.guntram.mcmod.fabrictools.ModConfigurationHandler;
-import de.guntram.mcmod.fabrictools.Types.ConfigurationMinecraftColor;
 import de.guntram.mcmod.fabrictools.Types.ConfigurationTrueColor;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
-import me.shedaniel.clothconfig2.impl.builders.DropdownMenuBuilder;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.text.LiteralTextContent;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableTextContent;
 
 public class GuiModOptions {
 
