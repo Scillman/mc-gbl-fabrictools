@@ -1,19 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.guntram.mcmod.fabrictools;
 
 import java.util.function.Consumer;
 
 /**
- *
  * @author gbl
  */
 public class ConfigurationItem {
 
-     String key;
+    String key;
     String toolTip;
     private Object value;
     Object defaultValue;

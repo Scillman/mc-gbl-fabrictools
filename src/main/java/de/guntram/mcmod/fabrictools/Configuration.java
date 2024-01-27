@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.guntram.mcmod.fabrictools;
 
 import com.google.gson.Gson;
@@ -26,7 +21,6 @@ import java.util.Map;
 import net.minecraft.client.resource.language.I18n;
 
 /**
- *
  * @author gbl
  */
 public class Configuration implements IConfiguration {
@@ -58,7 +52,7 @@ public class Configuration implements IConfiguration {
         try {
             for (Map.Entry<String, ConfigurationItem> entry: items.entrySet()) {
                 if (entry.getValue().getValue() instanceof Map) {
-                    Map map = (Map)(Object)entry.getValue().getValue();
+                    Map<?, ?> map = (Map<?, ?>)(Object)entry.getValue().getValue();
                     Object type = map.get("type");
                     if (type == null) {
                         continue;
@@ -135,7 +129,7 @@ public class Configuration implements IConfiguration {
         return (int) getValue(description, category, defVal, 0, options.length-1, toolTip, Integer.class);
     }
 
-    public Object getValue(String description, int category, Object defVal, String toolTip, Class clazz) {
+    public Object getValue(String description, int category, Object defVal, String toolTip, Class<?> clazz) {
         return getValue(description, category, defVal, null, null, toolTip, clazz);
     }
 
@@ -151,8 +145,7 @@ public class Configuration implements IConfiguration {
      * @param clazz             The class that is expected to be returned
      * @return
      */
-    
-    public Object getValue(String description, int category, Object defVal, Object minVal, Object maxVal, String toolTip, Class clazz) {
+    public Object getValue(String description, int category, Object defVal, Object minVal, Object maxVal, String toolTip, Class<?> clazz) {
         ConfigurationItem item=items.get(description);
         if (item==null) {
             /* This requires more work than I'm willing to put in rn ...
@@ -266,7 +259,7 @@ public class Configuration implements IConfiguration {
     
     @Override
     public List<String> getKeys() {
-        List list=new ArrayList(items.keySet());
+        List<String> list = new ArrayList<String>(items.keySet());
         Collections.sort(list);
         return list;
     }

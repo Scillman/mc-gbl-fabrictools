@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.guntram.mcmod.fabrictools.Types;
 
 import java.util.Map;
 
 /**
- *
  * @author gbl
  */
 public class ConfigurationMinecraftColor {
@@ -25,7 +19,7 @@ public class ConfigurationMinecraftColor {
         return this.getClass().getName()+"[index="+colorIndex+"]";
     }
 
-    public static ConfigurationMinecraftColor fromJsonMap(Map map) {
+    public static ConfigurationMinecraftColor fromJsonMap(Map<?, ?> map) {
         ConfigurationMinecraftColor result = new ConfigurationMinecraftColor(0);
         try {
             result.colorIndex = (int)(double)map.get("colorIndex");
