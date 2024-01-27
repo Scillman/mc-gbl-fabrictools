@@ -13,7 +13,7 @@ sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
 ext.Versions = new Properties()
-Versions.load(file("version-files/mcversion-1.20.2.properties").newReader())
+Versions.load(file("version-files/mcversion-1.20.4.properties").newReader())
 
 archivesBaseName = "GBfabrictools"
 
