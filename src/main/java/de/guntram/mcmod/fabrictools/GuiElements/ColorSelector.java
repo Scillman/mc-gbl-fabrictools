@@ -85,7 +85,7 @@ public class ColorSelector extends ClickableWidget {
     }
 
     @Override
-    protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+    protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
     }
 
     private class ColorButton extends ClickableWidget {
@@ -125,7 +125,7 @@ public class ColorSelector extends ClickableWidget {
         }
 
         @Override
-        protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+        protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
         }
     }
 }

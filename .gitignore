@@ -1,3 +1,35 @@
+# gradle
 .gradle/
-.nb-gradle/
 build/
+out/
+classes/
+gradlew
+gradlew.bat
+gradle/*
+!gradle/wrapper/
+gradle/wrapper/*
+!gradle/wrapper/gradle-wrapper.properties
+
+# eclipse
+*.launch
+
+# idea
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+.settings/
+.vscode/
+.vs/
+bin/
+.classpath
+.project
+
+# macos
+*.DS_Store
+
+# fabric
+run/
+remappedSrc/

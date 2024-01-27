@@ -168,6 +168,6 @@ public class GuiSlider extends ClickableWidget {
     }
     
     @Override
-    protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+    protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
     }
 }

@@ -105,7 +105,7 @@ public class GuiModOptions extends Screen implements Supplier<Screen>, SliderVal
             }
 
             @Override
-            protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+            protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
             }
         });
 
@@ -137,7 +137,7 @@ public class GuiModOptions extends Screen implements Supplier<Screen>, SliderVal
                     }
 
                     @Override
-                    protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+                    protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
                     }
                 });
             } else if (value instanceof Boolean) {
@@ -158,7 +158,7 @@ public class GuiModOptions extends Screen implements Supplier<Screen>, SliderVal
                     }
 
                     @Override
-                    protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+                    protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
                     }
                 });
             } else if (value instanceof String) {
@@ -212,7 +212,7 @@ public class GuiModOptions extends Screen implements Supplier<Screen>, SliderVal
                     public boolean changeFocus(boolean ignored) { setMessage(null); return ignored; }
 
                     @Override
-                    protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+                    protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
                     }
                 });
                 element.setMessage(ScreenTexts.EMPTY);
@@ -236,7 +236,7 @@ public class GuiModOptions extends Screen implements Supplier<Screen>, SliderVal
                     public boolean changeFocus(boolean ignored) { setMessage(null); return ignored; }
 
                     @Override
-                    protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+                    protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
                     }
                 });
                 element.setMessage(ScreenTexts.EMPTY);
@@ -261,7 +261,7 @@ public class GuiModOptions extends Screen implements Supplier<Screen>, SliderVal
                 }
 
                 @Override
-                protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+                protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
                 }
             });
         }

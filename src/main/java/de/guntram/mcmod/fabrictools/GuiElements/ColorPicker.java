@@ -113,7 +113,7 @@ public class ColorPicker extends ClickableWidget implements SliderValueConsumer 
     }
 
     @Override
-    protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+    protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
     }
 
     private class ColorDisplayAreaButton extends ClickableWidget {
@@ -139,7 +139,7 @@ public class ColorPicker extends ClickableWidget implements SliderValueConsumer 
         }
 
         @Override
-        protected void method_47399(NarrationMessageBuilder narrationMessageBuilder) {
+        protected void appendClickableNarrations(NarrationMessageBuilder narrationMessageBuilder) {
         }
     }
 }
