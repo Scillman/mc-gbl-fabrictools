@@ -25,7 +25,7 @@ public class ConfigurationMinecraftColor {
         return this.getClass().getName()+"[index="+colorIndex+"]";
     }
 
-    public static ConfigurationMinecraftColor fromJsonMap(Map map) {
+    public static ConfigurationMinecraftColor fromJsonMap(Map<?, ?> map) { // Map<String, ?>
         ConfigurationMinecraftColor result = new ConfigurationMinecraftColor(0);
         try {
             result.colorIndex = (int)(double)map.get("colorIndex");

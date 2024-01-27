@@ -26,7 +26,7 @@ public class ConfigurationTrueColor {
         return red << 16 | green << 8 | blue;
     }
 
-    public static ConfigurationTrueColor fromJsonMap(Map map) {
+    public static ConfigurationTrueColor fromJsonMap(Map<?, ?> map) { // Map<String, ?>
         ConfigurationTrueColor result = new ConfigurationTrueColor(0);
         try {
             result.red = (int) (double) map.get("red");

@@ -31,7 +31,7 @@ public class ColorPicker extends ClickableWidget implements SliderValueConsumer 
         this.setX((optionScreen.width - width) / 2);
         this.setY((optionScreen.height - height) / 2);
         colorDisplay = new ColorDisplayAreaButton(
-            this, getX(), getY(), 20, 100, buttonText, currentColor
+            getX(), getY(), 20, 100, buttonText, currentColor
         );
         redSlider = new GuiSlider(this, getX()+50, getY(), 200, 20, (currentColor>>16)&0xff, 0, 255, "red");
         greenSlider = new GuiSlider(this, getX()+50, getY()+40, 200, 20, (currentColor>>16)&0xff, 0, 255, "green");
@@ -118,13 +118,11 @@ public class ColorPicker extends ClickableWidget implements SliderValueConsumer 
 
     private class ColorDisplayAreaButton extends ClickableWidget {
 
-        private final ColorPicker parent;
         private int rgb;
 
-        public ColorDisplayAreaButton(ColorPicker parent, int x, int y, int width, int height, Text message, int rgb) {
+        public ColorDisplayAreaButton(int x, int y, int width, int height, Text message, int rgb) {
             super(x, y, width, height, message);
             this.rgb = rgb;
-            this.parent = parent;
         }
         
         public void setColor(int rgb) {
