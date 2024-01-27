@@ -1,3 +1,3 @@
-[submodule "Versionfiles"]
-	path = Versionfiles
-	url = https://github.com/gbl/Versionfiles.git
+[submodule "version-files"]
+	path = version-files
+	url = https://github.com/Scillman/mc-version-files.git
